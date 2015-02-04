@@ -1,0 +1,12 @@
+diff -Naur a/startactive b/startactive
+--- a/startactive	2013-08-14 21:31:36.008706767 +0200
++++ b/startactive	2013-08-14 21:31:54.196535054 +0200
+@@ -6,6 +6,8 @@
+ #enable maliit plugin
+ export QT_IM_MODULE=Maliit
+ 
++export `dbus-launch`
++
+ #maliit-server should auto start
+ #/usr/bin/maliit-server &
+ 

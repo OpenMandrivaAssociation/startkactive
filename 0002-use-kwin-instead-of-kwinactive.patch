@@ -1,0 +1,24 @@
+From 3ede55443e11b51bfeaae727ee91f9fa3795deb9 Mon Sep 17 00:00:00 2001
+From: Josua Mayer <not@given.privacy>
+Date: Mon, 24 Sep 2012 19:59:50 +0200
+Subject: [PATCH 2/2] use kwin instead of kwinactive
+
+---
+ modules/ksmserver.module |    2 +-
+ 1 Datei geändert, 1 Zeile hinzugefügt(+), 1 Zeile entfernt(-)
+
+diff --git a/modules/ksmserver.module b/modules/ksmserver.module
+index 282b21f..17c4cab 100644
+--- a/modules/ksmserver.module
++++ b/modules/ksmserver.module
+@@ -1,6 +1,6 @@
+ [Module]
+ id=ksmserver
+-exec=kwrapper4 ksmserver --windowmanager kwinactive_gles
++exec=kwrapper4 ksmserver --windowmanager kwin_gles
+ depends=kdeinit,nepomuk
+ 
+ wait=dbus
+-- 
+1.7.10.4
+

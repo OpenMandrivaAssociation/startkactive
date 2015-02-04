@@ -1,0 +1,22 @@
+From a7135ae29351abbfab6f6fe4d431d4af39910111 Mon Sep 17 00:00:00 2001
+From: Artox <artox@hellgate-wow.net>
+Date: Thu, 1 Nov 2012 15:33:28 +0100
+Subject: [PATCH 4/4] explicitly start all lnusertemp modules
+
+---
+ modules/prestart.module |    2 +-
+ 1 Datei geändert, 1 Zeile hinzugefügt(+), 1 Zeile entfernt(-)
+
+diff --git a/modules/prestart.module b/modules/prestart.module
+index 054eb83..1adf572 100644
+--- a/modules/prestart.module
++++ b/modules/prestart.module
+@@ -1,4 +1,4 @@
+ [Module]
+ id=prestart
+-depends=lnusertemp
++depends=lnusertemp-cache,lnusertemp-socket,lnusertemp-tmp
+ wait=end
+-- 
+1.7.10.4
+

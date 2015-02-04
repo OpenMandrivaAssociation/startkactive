@@ -1,0 +1,35 @@
+From a9f0f56c86f228b088cdbc0c9c748fe2f83526ae Mon Sep 17 00:00:00 2001
+From: Josua Mayer <not@given.privacy>
+Date: Sat, 15 Sep 2012 14:47:14 +0200
+Subject: [PATCH 1/2] For KDE4 on openSUSE the dotfolder is called .kde4
+
+---
+ setup-kde-skel |    8 ++++----
+ 1 Datei geändert, 4 Zeilen hinzugefügt(+), 4 Zeilen entfernt(-)
+
+diff --git a/setup-kde-skel b/setup-kde-skel
+index a987dde..2af3024 100644
+--- a/setup-kde-skel
++++ b/setup-kde-skel
+@@ -3,14 +3,14 @@
+ # installation the setup will be skipt.
+ 
+ 
+-if [ -f "${HOME}/.kde/share/config/plasma-device-appletsrc" ]; then
+-   echo "${HOME}/.kde/share/config/plasma-device-appletsrc already exists, will not overwrite"
++if [ -f "${HOME}/.kde4/share/config/plasma-device-appletsrc" ]; then
++   echo "${HOME}/.kde4/share/config/plasma-device-appletsrc already exists, will not overwrite"
+ else
+    #enable the active plugin for Maliit
+    gconftool-2 --set "/maliit/onscreen/enabled" --type list --list-type=string [active-keyboard.qml,en_us]
+    gconftool-2 --set "/maliit/onscreen/active" --type list --list-type=string [active-keyboard.qml,en_us]
+    # Copy the /etc/skel
+-   if [ ! -d "${HOME}/.kde" ]; then
+-       cp -auR /etc/skel/.kde ${HOME}
++   if [ ! -d "${HOME}/.kde4" ]; then
++       cp -auR /etc/skel/.kde4 ${HOME}
+    fi
+ fi
+-- 
+1.7.10.4
+
