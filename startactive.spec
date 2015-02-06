@@ -1,7 +1,7 @@
 Name:		startactive
 Summary:	KDE User Interface for mobile Devices
 Version:	0.4
-Release:	1
+Release:	2
 License:	GPLv2
 Group:		Graphical desktop/KDE
 Url:		http://plasma-active.org/
