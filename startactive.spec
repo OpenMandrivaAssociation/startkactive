@@ -4,7 +4,7 @@ Version:	0.4
 Release:	2
 License:	GPLv2
 Group:		Graphical desktop/KDE
-Url:		http://plasma-active.org/
+Url:		https://plasma-active.org/
 Source0:	%{name}-%{version}.tar.xz
 Patch1:		0001-For-KDE4-on-openSUSE-the-dotfolder-is-called-.kde4.patch
 Patch2:		0002-use-kwin-instead-of-kwinactive.patch
