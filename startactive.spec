@@ -11,6 +11,7 @@ Patch2:		0002-use-kwin-instead-of-kwinactive.patch
 Patch4:		0004-explicitly-start-all-lnusertemp-modules.patch
 Patch5:		0005-make-sure-dbus-is-started-and-encironment-variables-.patch
 #Patch6:		add-correct-lib-suffix.patch
+BuildRequires:	make
 BuildRequires:	task-kde4-devel
 BuildRequires:	pkgconfig(xcursor)
 Requires:	plasma-mobile = 0.5
